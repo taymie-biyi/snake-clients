@@ -16,28 +16,8 @@ const connect = function () {
 
   conn.on("connect", () => {
     conn.write("Successfully connected to game server")
-    conn.write("Name: TAY \n");
-    // conn.write("Move: down");
-    // conn.write("Move: up");
-    // conn.write("Move: left");
-    // conn.write("Move: right");
-    // conn.write("Move: up");
-
-    // setInterval(() => {
-    //   conn.write("Move: up");
-    // }, 500)
-
-    // setInterval(() => {
-    //   conn.write("Move: right");
-    // }, 600)
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 500)
-
-    // setTimeout(() => {
-    //   conn.write("Move: right");
-    // }, 500)
+    conn.write("Name: TAY");
+   
   })
 
   return conn;
